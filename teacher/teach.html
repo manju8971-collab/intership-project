@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Booking Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book Appointment</a></li>
+                <li><a href="#">Teacher Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Book an Appointment with a Teacher</h2>
+            <form id="booking-form">
+                <label for="teacher">Select a Teacher:</label>
+                <select id="teacher" name="teacher">
+                    <option value="">Select a Teacher</option>
+                    <option value="John Doe">John Doe</option>
+                    <option value="Jane Smith">Jane Smith</option>
+                    <option value="Bob Johnson">Bob Johnson</option>
+                </select>
+                <br><br>
+                <label for="date">Select a Date:</label>
+                <input type="date" id="date" name="date">
+ <br><br>
+                <label for="time">Select a Time:</label>
+                <input type="time" id="time" name="time">
+                <br><br>
+                <label for="subject">Select a Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">Select a Subject</option>
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
+                    <option value="English">English</option>
+                </select>
+                <br><br>
+                <button id="book-btn">Book Appointment</button>
+            </form>
+        </section>
+        <section class="appointment-list">
+            <h2>Upcoming Appointments</h2>
+            <ul id="appointment-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Teacher Booking Appointment System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
